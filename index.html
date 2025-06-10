@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cacau Show - Bombons Artesanais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cacau Show - Bombons</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="historia.html">Nossa História</a>
+      <a href="contato.html">Contato</a>
+      <button onclick="abrirCarrinho()">🛒 Carrinho (<span id="quantidade">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <div class="produto">
+        <img src="img/Bombom Trufa.webp" alt="Bombom Trufa">
+        <h3>Trufa ao Leite</h3>
+        <p>Chocolate ao leite com recheio cremoso.</p>
+        <span>R$ 4,50</span>
+        <button onclick="adicionarAoCarrinho('Trufa ao Leite', 4.50)">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <img src="img/Bombom Amargo.webp" alt="Bombom Amargo">
+        <h3>Bombom Meio Amargo</h3>
+        <p>Chocolate meio amargo com recheio de café.</p>
+        <span>R$ 5,00</span>
+        <button onclick="adicionarAoCarrinho('Bombom Meio Amargo', 5.00)">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <img src="img/Caixa de bombons.jpg" alt="Caixa De Bombons Trufas Chocolate Gourmet 465g">
+        <h3>Trufas ao Leite, chocolate branco e meio amargo</h3>
+        <p>Chocolate ao leite, branco e meio amargo com recheio cremoso.</p>
+        <span>R$ 159,99</span>
+        <button onclick="adicionarAoCarrinho('Trufa ao Leite', 159.99)">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <img src="img/PRECIOSIDADES SORTIDO.webp" alt="PRECIOSIDADES SORTIDO 360g">
+        <h3>Trufas ao Leite, chocolate branco e meio amargo</h3>
+        <p>Chocolate ao leite, branco e meio amargo com recheio cremoso.</p>
+        <span>R$ 159,90</span>
+        <button onclick="adicionarAoCarrinho('Trufa ao Leite', 159.90)">Adicionar</button>
+      </div>
+
+<div class="produto">
+        <img src="img/trufas chocolate branco.jpg" alt="Kit 10 Trufas LaNut Pistache 12,5g">
+        <h3>Chocolate branco com Creme de Pistache Lançamento</h3>
+        <p>Chocolate branco com recheio cremoso.</p>
+        <span>R$ 49,90</span>
+        <button onclick="adicionarAoCarrinho('Trufa ao Leite', 49.90)">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <img src="img/dia dos namorados.png" alt="Chocolate Cacau Show Dia Dos Namorados - LIBRAIN">
+        <h3>Bombons de chocolate ao leite e branco</h3>
+        <p>Chocolates ao leite e branco com recheio cremoso.</p>
+        <span>R$ 63,68</span>
+        <button onclick="adicionarAoCarrinho('Trufa ao Leite', 63.68)">Adicionar</button>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="carrinho" class="modal">
+    <h2>Seu Carrinho</h2>
+    <ul id="itens-carrinho"></ul>
+    <p>Total: R$ <span id="total">0.00</span></p>
+    <button onclick="fecharCarrinho()">Fechar</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Cacau Show - Loja de Bombons. Todos os direitos reservados.</p>
+    <p><strong>Desenvolvido por Ali Roze Muniz P. Donadio.</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
